@@ -1,3 +1,4 @@
+```python
 class FourCal:
     def __init__(self, first, second):
         self.first=first
@@ -10,3 +11,4 @@ class FourCal:
         return result
     
 a=FourCal(1,2)
+```

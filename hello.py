@@ -8,5 +8,5 @@ class FourCal:
     def add(self):
         result=self.first+self.second
         return result
-
+    
 a=FourCal(1,2)

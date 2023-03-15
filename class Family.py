@@ -1,6 +1,6 @@
 class Family:
     lastname="김"
-    
+
 Family.lastname="박"
 print(Family.lastname)
 

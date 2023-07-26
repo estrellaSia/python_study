@@ -7,4 +7,4 @@ timmy_the_turtle.forward(100)
 timmy_the_turtle.right(90)
 
 screen = Screen()
-screen.exitonclick()
+screen.exitonclick() #클릭 시 종료

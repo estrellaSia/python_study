@@ -4,7 +4,7 @@ import turtle as t
 import random
 
 tim = t.Turtle()
-t.colormode(255)
+t.colormode(255) #펜 색상 RGB 변경
 def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)

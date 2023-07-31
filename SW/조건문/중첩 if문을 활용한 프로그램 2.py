@@ -13,5 +13,6 @@ else:
                 print("D")
             else:
                 print("F")
+     
                 
 print("학점입니다")

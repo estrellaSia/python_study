@@ -27,7 +27,7 @@ while game_is_on:
     screen.update()
     time.sleep(0.1)  # 각 세그먼트가 이동하고 나서 0.1s 지연시간이 걸림
 
-    for seg_num in range(len(segments) - 1, 0,-1): #start:범위의 시작점, stop:범위가 끝나는 지점, step: 증가폭
+    for seg_num in range(len(segments) - 1, 0,-1): #start:범위의 시작점, stop:범위가 끝나는 지점+1, step: 증가폭
         new_x = segments[seg_num - 1].xcor()
         new_y = segments[seg_num - 1].ycor()
         segments[seg_num].goto(new_x, new_y)

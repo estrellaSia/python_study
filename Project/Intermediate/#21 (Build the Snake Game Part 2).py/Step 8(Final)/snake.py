@@ -1,46 +1,52 @@
-from turtle import Screen
-from snake import Snake
-from food import Food
-from scoreboard import Scoreboard
-import time
+from turtle import Turtle
+STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
 
-screen = Screen()
-screen.setup(width=600, height=600)
-screen.bgcolor("black") #background color
-screen.title("My Snake Game")
-screen.tracer(0) #터틀 애니메이션 on/off, update를 하지 않는 이상 화면은 갱신되지 x기 때문에 어떤 동작을 수행하는지 볼 수 x
 
-snake = Snake()
-food = Food()
-scoreboard = Scoreboard()
+class Snake:
 
-screen.listen()
-screen.onkey(snake.up, "Up") #위쪽 방향키가 눌리면 Up 함수가 불릴 것임
-screen.onkey(snake.down, "Down")
-screen.onkey(snake.left, "Left")
-screen.onkey(snake.right, "Right")
+    def __init__(self):
+        self.segments = []
+        self.create_snake()
+        self.head = self.segments[0]
 
-game_is_on = True
-while game_is_on:
-    screen.update()  # 화면 갱신
-    time.sleep(0.1)  # 각 세그먼트가 이동하고 나서 0.1s 지연시간이 걸림(갱신 지연시키는 타이머를 써서 화면 갱신 횟수 조정)
-    snake.move()
+    def create_snake(self):
+        for position in STARTING_POSITIONS:
+            self.add_segment(position)
 
-    #Detect collision with food
-    if snake.head.distance(food) < 15: #뱀의 머리부터 먹이까지의 거리
-        food.refresh()
-        snake.extend()
-        scoreboard.increase_score()
-    #Detect collision with wall
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or  snake.head.ycor() > 280 or snake.head.ycor() < -280:
-        game_is_on = False
-        scoreboard.game_over()
+    def add_segment(self, position):
+        new_segment = Turtle("square")
+        new_segment.color("white")
+        new_segment.penup()
+        new_segment.goto(position)
+        self.segments.append(new_segment)
 
-    #Detect collision with tail
-    for segment in snake.segments[1:]:
-        if snake.head.distance(segment) < 10:
-            game_is_on = False
-            scoreboard.game_over()
-        # 반복문을 통해 세그먼트를 가져오면 이 segments 리스트를 잘라주면 됨
+    def extend(self):
+        self.add_segment(self.segments[-1].position())
 
-screen.exitonclick()
+    def move(self):
+        for seg_num in range(len(self.segments) - 1, 0, -1):
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
+        self.head.forward(MOVE_DISTANCE)
+
+    def up(self):
+        if self.head.heading() != DOWN:
+            self.head.setheading(UP)
+
+    def down(self):
+        if self.head.heading() != UP:
+            self.head.setheading(DOWN)
+
+    def left(self):
+        if self.head.heading() != RIGHT:
+            self.head.setheading(LEFT)
+
+    def right(self):
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT)

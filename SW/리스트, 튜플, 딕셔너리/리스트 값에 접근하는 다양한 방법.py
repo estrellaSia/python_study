@@ -11,3 +11,9 @@ print(aa[2:4])
 aa = [10, 20, 30, 40]
 print(aa[2:])
 print(aa[:2])
+
+# 리스트끼리 덧셈, 곱셈 연산
+aa = [10, 20, 30, 40]
+bb = [40, 50, 60]
+print(aa + bb)
+print(aa * 3)

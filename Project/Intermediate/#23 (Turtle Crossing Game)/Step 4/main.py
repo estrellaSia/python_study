@@ -1,3 +1,5 @@
+# Detect when turtle reaches the other side
+
 import time
 from turtle import Screen
 from player import Player

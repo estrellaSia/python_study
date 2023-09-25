@@ -11,3 +11,8 @@ print(aa)
 aa = [10, 20, 30]
 aa[1] = [200, 201]
 print(aa)
+
+# del() 함수 : 리스트 항목을 삭제
+aa = [10, 20, 30]
+del(aa[1])
+print(aa)

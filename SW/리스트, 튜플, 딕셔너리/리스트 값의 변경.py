@@ -23,6 +23,11 @@ aa[1:4] = []
 print(aa)
 
 # 리스트 자체를 삭제하는 방법
+## 1
 aa = [10, 20, 30]
 aa = []
+print(aa)
+## 2
+aa = [10, 20, 30]
+aa = None
 print(aa)

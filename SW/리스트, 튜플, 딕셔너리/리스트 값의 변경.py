@@ -31,3 +31,7 @@ print(aa)
 aa = [10, 20, 30]
 aa = None
 print(aa)
+## 3 (오류발생)
+aa = [10, 20, 30]
+del(aa)
+print(aa)

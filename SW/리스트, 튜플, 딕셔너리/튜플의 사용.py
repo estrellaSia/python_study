@@ -12,3 +12,10 @@ print(tt1[:3])
 tt2 = ('A', 'B')
 print(tt1 + tt2)
 print(tt2 * 3)
+
+# 튜플(읽기 전용)의 항목 변경
+myTuple = (10, 20, 30)
+myList = list(myTuple)
+myList.append(40)
+myTuple = tuple(myList)
+print(myTuple)

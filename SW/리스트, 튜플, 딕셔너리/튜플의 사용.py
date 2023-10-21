@@ -7,3 +7,8 @@ print(tt1[0] + tt1[1] + tt1[2])
 print(tt1[1:3])
 print(tt1[1:])
 print(tt1[:3])
+
+# 튜플의 덧셈, 곱셈
+tt2 = ('A', 'B')
+print(tt1 + tt2)
+print(tt2 * 3)

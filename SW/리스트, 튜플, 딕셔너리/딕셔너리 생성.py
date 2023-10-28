@@ -10,3 +10,7 @@ print(student1)
 # 딕셔너리에 쌍을 추가
 student1['연락처'] = '010-1234-1234'
 print(student1)
+
+# 딕셔너리의 값을 변경
+student1['학과'] = '아동가족복지학과'
+print(student1)

@@ -7,3 +7,6 @@ print(student1.get('이름')) ## key로 value 접근 가능, 없는 key 호출�
 
 # 딕셔너리의 모든 key들을 반환
 print(student1.keys())
+
+# 리스트 형태로 반환 가능
+print(list(student1.keys()))

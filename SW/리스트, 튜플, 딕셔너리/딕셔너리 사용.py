@@ -10,3 +10,6 @@ print(student1.keys())
 
 # 리스트 형태로 반환 가능
 print(list(student1.keys()))
+
+# 딕셔너리명.values() 함수
+print(student1.values())

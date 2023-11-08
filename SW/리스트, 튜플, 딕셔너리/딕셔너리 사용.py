@@ -16,3 +16,6 @@ print(student1.values())
 
 # list(딕셔너리명.values()) 함수
 print(list(student1.values()))
+
+# 딕셔너리명.items() 함수
+print(student1.items())

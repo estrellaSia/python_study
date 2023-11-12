@@ -7,3 +7,6 @@ print(numList)
 # 컴프리헨션으로 작성
 numList = [num for num in range(1, 6)]
 print(numList)
+
+numList = [num * num for num in range(1, 6)]
+print(numList)

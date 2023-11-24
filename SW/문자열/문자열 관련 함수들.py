@@ -11,3 +11,6 @@ print(s.find('k')) # 해당 문자가 없다면 -1을 반환
 # 위치 알려 주기 - index()
 b = "Life is too short"
 print(b.index('t'))
+
+# 문자열 삽입 - join()
+print(",".join('abcd'))

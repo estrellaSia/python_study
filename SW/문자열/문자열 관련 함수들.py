@@ -1,16 +1,16 @@
 # 문자 개수 세기 - count()
 a = "hobby"
-print(a.count('b'))
+print(a.count('b')) # 결과값: 2
 
 # 위치 알려 주기 - find()
 s = "hello python!"
-print(s.find('p'))
+print(s.find('p')) # 결과값: 6
 
-print(s.find('k')) # 해당 문자가 없다면 -1을 반환
+print(s.find('k')) # 결과값:  -1
 
 # 위치 알려 주기 - index()
 b = "Life is too short"
-print(b.index('t'))
+print(b.index('t')) # 결과값: 8
 
 # 문자열 삽입 - join()
-print(",".join('abcd'))
+print(",".join('abcd')) # 결과값: a,b,c,d

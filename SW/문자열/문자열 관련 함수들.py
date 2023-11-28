@@ -13,4 +13,8 @@ b = "Life is too short"
 print(b.index('t')) # 결과값: 8
 
 # 문자열 삽입 - join()
-print(",".join('abcd')) # 결과값: a,b,c,d
+c = ",".join('abcd')
+print(c) # 결과값: a,b,c,d
+
+e = ",".join(['a', 'b', 'c', 'd'])
+print(e) # 결과값: a,b,c,d

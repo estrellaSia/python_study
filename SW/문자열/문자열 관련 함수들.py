@@ -18,3 +18,7 @@ print(c) # 결과값: a,b,c,d
 
 e = ",".join(['a', 'b', 'c', 'd'])
 print(e) # 결과값: a,b,c,d
+
+# 소문자를 대문자로 바꾸기 - upper()
+d = "hello"
+print(d.upper())

@@ -22,3 +22,7 @@ print(e) # 결과값: a,b,c,d
 # 소문자를 대문자로 바꾸기 - upper()
 d = "hello"
 print(d.upper())
+
+# 대문자를 소문자로 바꾸기 - lower()
+f = "HI"
+print(f.lower())

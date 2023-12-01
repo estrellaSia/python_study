@@ -26,3 +26,7 @@ print(d.upper())
 # 대문자를 소문자로 바꾸기 - lower()
 f = "HI"
 print(f.lower())
+
+# 왼쪽 공백 지우기 - lstrip()
+g = " Hello"
+print(g.lstrip())

@@ -30,3 +30,7 @@ print(f.lower())
 # 왼쪽 공백 지우기 - lstrip()
 g = " Hello"
 print(g.lstrip())
+
+# 오른쪽 공백 지우기 = rstrip()
+h = "Bye "
+print(h.rstrip())

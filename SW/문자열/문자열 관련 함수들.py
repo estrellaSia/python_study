@@ -31,6 +31,10 @@ print(f.lower())
 g = " Hello"
 print(g.lstrip())
 
-# 오른쪽 공백 지우기 = rstrip()
+# 오른쪽 공백 지우기 - rstrip()
 h = "Bye "
 print(h.rstrip())
+
+# 양쪽 공백 지우기 - strip()
+i = " BYE BYE "
+print(i.strip())

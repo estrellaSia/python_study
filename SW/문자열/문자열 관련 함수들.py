@@ -38,3 +38,7 @@ print(h.rstrip())
 # 양쪽 공백 지우기 - strip()
 i = " BYE BYE "
 print(i.strip())
+
+# 문자열 바꾸기 - replace()
+j = "Life is too short"
+print(j.replace("Life", "Your pencil"))

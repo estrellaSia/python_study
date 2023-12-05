@@ -42,3 +42,7 @@ print(i.strip())
 # 문자열 바꾸기 - replace()
 j = "Life is too short"
 print(j.replace("Life", "Your pencil"))
+
+# 문자열 나누기 = split()
+k = "Life is too short"
+print(k.split())

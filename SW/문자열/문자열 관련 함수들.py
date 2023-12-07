@@ -46,3 +46,6 @@ print(j.replace("Life", "Your pencil"))
 # 문자열 나누기 = split()
 k = "Life is too short"
 print(k.split())
+
+l = "L:O:V:E"
+print(l.split(':'))

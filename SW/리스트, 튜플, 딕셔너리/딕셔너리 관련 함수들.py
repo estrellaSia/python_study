@@ -7,3 +7,6 @@ print(a.values()) # 결과값: dict_values(['mk', '010-1234-5678', '1112'])
 
 # items() - key, value 쌍 얻기
 print(a.items()) # 결과값: dict_items([('name', 'mk'), ('phone', '010-1234-5678'), ('birth', '1112')])
+
+# clear() - key:value 쌍 모두 지우기
+print(a.clear()) # 결과값: None

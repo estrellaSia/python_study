@@ -10,3 +10,7 @@ print(a.items()) # 결과값: dict_items([('name', 'mk'), ('phone', '010-1234-56
 
 # clear() - key:value 쌍 모두 지우기
 print(a.clear()) # 결과값: None
+
+# get() - key로 value 얻기
+b = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+print(b.get('name'))

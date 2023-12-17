@@ -14,3 +14,4 @@ print(a.clear()) # 결과값: None
 # get() - key로 value 얻기
 b = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
 print(b.get('name'))
+print(b.get('phone'))

@@ -13,5 +13,10 @@ print(a.clear()) # 결과값: None
 
 # get() - key로 value 얻기
 b = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
-print(b.get('name'))
-print(b.get('phone'))
+print(b.get('name')) # 결과값: pey
+print(b.get('phone')) # 결과값: 010-9999-1234
+
+# in() - 해당 key가 딕셔너리 안에 있는지 조사하기
+b = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+c = 'name' in b
+print(c) # 결과값: True

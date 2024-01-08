@@ -3,3 +3,9 @@
 a = [1, 2, 3]
 b = id(a)
 print(b)
+
+# copy 모듈 이용하기
+from copy import copy
+a = [1, 2, 3]
+c = copy(a)
+print(c)
